@@ -5,8 +5,7 @@ public interface RunSomething {
     void doThing();
     //void doOtherThing(); // @FunctionalInterface 사용으로 막아짐
 
-    //이미 배포된 상태에서 인터페이스에 새로운 함수가 필요할 떄 default 사용
-    //
+    //default 사용으로 인터페이스 안에 구현체 메소드 생성이 가능해짐.
     default void newThing() {
 
     }

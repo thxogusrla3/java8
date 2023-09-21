@@ -8,6 +8,7 @@ public class PureMain {
     public static void main(String[] args) {
         int notPureVal = 10;
 
+        //익명 클래스
         PureFunction anonymousFunction = new PureFunction() {
             int pureVal = 20;
             @Override
@@ -17,6 +18,7 @@ public class PureMain {
             }
         };
 
+        //람다 표현식
         PureFunction lambdaFunction = (int a) -> {
             a++;
             return a + notPureVal;
