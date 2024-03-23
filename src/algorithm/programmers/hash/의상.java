@@ -15,8 +15,8 @@ public class 의상 {
 
         int result = 1;
         for(String key: map.keySet()) {
-            result *= map.get(key);
+            result *= (map.get(key) + 1); //key 옷에 대해 아무것도 입지 않았을 때 + 1
         }
-        System.out.println(result + clothes.length);
+        System.out.println(result - 1); //모든 옷을 입지 않은 경우 때매 -1
     }
 }
