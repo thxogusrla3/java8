@@ -7,6 +7,8 @@ public class 의상 {
     public static void main(String[] args) {
         String[][] clothes = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
 
+
+
         Map<String, Integer> map = new HashMap<>();
 
         for(String[] cloth: clothes) {
